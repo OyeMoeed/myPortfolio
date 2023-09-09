@@ -10,9 +10,9 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="max-w-screen max-h-screen font-all">
-      <div className="flex flex-row justify-between items-center h-[5em] px-4 z-[100000000]">
-        <a className="text-[#F1F1F1]">
+    <nav className="max-w-screen h-[5em] font-all">
+      <div className="fixed right-0 left-0 flex flex-row justify-between items-center h-[5em] px-4 z-[100000000]">
+        <a className="text-[#F1F1F1] z-[100000000]">
           <Link to={"/"}>
             <h1>Moeed Sarwar</h1>
             <p className="text-[#797979] text-[0.8em]">Gujranwala,Pk</p>
@@ -37,7 +37,7 @@ const NavBar = () => {
             </li>
           </ul>
         </nav>
-        <nav className="text-[#f1f1f1] flex flex-row items-center space-x-2 md:hidden">
+        <nav className="text-[#f1f1f1] z-[1000000000] flex flex-row items-center space-x-2 md:hidden">
           <h1>Menu</h1>
           <div onClick={NavHandeler}>
             {!nav ? <IoMenuOutline size={20} /> : <IoCloseOutline size={20} />}
@@ -47,8 +47,8 @@ const NavBar = () => {
       <div
         className={
           nav
-            ? "fixed right-0 w-screen h-screen bg-[#020202] ease-in-out duration-500"
-            : "fixed right-[-100%] w-screen h-screen space-y-[21rem] bg-[#020202] ease-in-out duration-500"
+            ? "fixed pt-[4em] right-0 top-0 w-screen h-screen bg-[#020202] ease-in-out duration-500"
+            : "fixed pt-[4em] right-[-100%] top-0 w-screen h-screen space-y-[21rem] bg-[#020202] ease-in-out duration-500"
         }
       >
         <div className="flex flex-col justify-between h-[90vh]">
