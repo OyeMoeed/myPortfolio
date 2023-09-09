@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="max-w-screen max-h-screen px-4 mx-auto font-all">
+    <div className="max-w-screen max-h-screen px-4 mx-auto font-all overflow-hidden">
       <div className="flex flex-col border rounded-2xl border-[#383838] justify-center text-justify ">
         <div className="flex flex-col h-screen justify-between">
           <div className="flex flex-col text-center ">
