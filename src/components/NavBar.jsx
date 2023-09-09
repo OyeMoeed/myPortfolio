@@ -46,7 +46,7 @@ const NavBar = () => {
       </div>
       <div
         className={
-          !nav
+          nav
             ? "fixed right-0 w-screen h-screen space-y-[21rem] bg-[#020202] ease-in-out duration-500"
             : "fixed right-[-100%] w-screen h-screen space-y-[21rem] bg-[#020202] ease-in-out duration-500"
         }
