@@ -47,56 +47,58 @@ const NavBar = () => {
       <div
         className={
           nav
-            ? "fixed right-0 w-screen h-screen space-y-[21rem] bg-[#020202] ease-in-out duration-500"
+            ? "fixed right-0 w-screen h-screen bg-[#020202] ease-in-out duration-500"
             : "fixed right-[-100%] w-screen h-screen space-y-[21rem] bg-[#020202] ease-in-out duration-500"
         }
       >
-        <ul className="p-4 space-y-3 text-[2em] text-[#f1f1f1] items-center">
-          <li className=" border rounded-2xl border-[#383838] ">
-            <Link to={"/"} className="pl-2 flex ">
-              Home
-            </Link>
-          </li>
-          <li className="border rounded-2xl border-[#383838] ">
-            <Link to={"/"} className="pl-2 flex">
-              About
-            </Link>
-          </li>
-          <li className="border rounded-2xl border-[#383838] ">
-            <Link to={"/"} className="pl-2 flex">
-              Playground
-            </Link>
-          </li>
-          <li className="border rounded-2xl border-[#383838] ">
-            <Link to={"/"} className="pl-2 flex">
-              Contact
-            </Link>
-          </li>
-        </ul>
-        <div className="pl-4">
-          <h1 className="text-[#797979]">Enquiries</h1>
-          <p className="text-[#f1f1f1]">oyemoeed@gmail.com</p>
-          <div>
-            <ul className="flex flex-row text-[#797979] space-x-2 pt-[2em]">
-              <li>
-                <a href="https://github.com/OyeMoeed" target="blank">
-                  Github
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/moeedsarwar/"
-                  target="blank"
-                >
-                  Linked In
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/oye_moeed/" target="blank">
-                  Instagram
-                </a>
-              </li>
-            </ul>
+        <div className="flex flex-col justify-between h-[90vh]">
+          <ul className="p-4 space-y-3 text-[2em] text-[#f1f1f1] items-center">
+            <li className=" border rounded-2xl border-[#383838] ">
+              <Link to={"/"} className="pl-2 flex ">
+                Home
+              </Link>
+            </li>
+            <li className="border rounded-2xl border-[#383838] ">
+              <Link to={"/"} className="pl-2 flex">
+                About
+              </Link>
+            </li>
+            <li className="border rounded-2xl border-[#383838] ">
+              <Link to={"/"} className="pl-2 flex">
+                Playground
+              </Link>
+            </li>
+            <li className="border rounded-2xl border-[#383838] ">
+              <Link to={"/"} className="pl-2 flex">
+                Contact
+              </Link>
+            </li>
+          </ul>
+          <div className="pl-4">
+            <h1 className="text-[#797979]">Enquiries</h1>
+            <p className="text-[#f1f1f1]">oyemoeed@gmail.com</p>
+            <div>
+              <ul className="flex flex-row text-[#797979] space-x-2 pt-[2em]">
+                <li>
+                  <a href="https://github.com/OyeMoeed" target="blank">
+                    Github
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/moeedsarwar/"
+                    target="blank"
+                  >
+                    Linked In
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/oye_moeed/" target="blank">
+                    Instagram
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
