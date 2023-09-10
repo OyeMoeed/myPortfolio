@@ -11,7 +11,10 @@ const NavBar = () => {
 
   return (
     <nav className="max-w-screen h-[5em] font-all">
-      <div className="fixed right-0 left-0 flex flex-row justify-between items-center h-[5em] px-4 z-[100000000]">
+      <div
+        className="fixed right-0 left-0 flex flex-row justify-between items-center h-[5em]
+      px-4 z-[100000000]"
+      >
         <a className="text-[#F1F1F1] z-[100000000]">
           <Link to={"/"}>
             <h1>Moeed Sarwar</h1>
