@@ -2,7 +2,7 @@ import React from "react";
 
 const Services = () => {
   return (
-    <div className="max-w-screen mx-auto px-4 font-all mt-[9em]">
+    <div className="max-w-screen mx-auto px-4 font-all mt-[9em] overflow-hidden">
       <div className="flex flex-col">
         <div className="flex justify-center w-screen">
           {" "}
