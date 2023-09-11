@@ -51,7 +51,7 @@ const NavBar = () => {
         className={
           nav
             ? "fixed pt-[4em] right-0 top-0 w-screen h-screen bg-[#020202] ease-in-out duration-500"
-            : "fixed pt-[4em] right-[-100%] top-0 w-screen h-screen space-y-[21rem] bg-[#020202] ease-in-out duration-500"
+            : "fixed pt-[4em] right-[-200%] top-0 w-screen h-screen space-y-[21rem] bg-[#020202] ease-in-out duration-500"
         }
       >
         <div className="flex flex-col justify-between h-[90vh]">

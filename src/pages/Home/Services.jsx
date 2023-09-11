@@ -4,7 +4,7 @@ const Services = () => {
   return (
     <div className="max-w-screen mx-auto px-4 font-all mt-[9em] overflow-hidden">
       <div className="flex flex-col">
-        <div className="flex justify-center w-screen">
+        <div className="flex justify-center">
           {" "}
           <h1 className="text-[#f1f1f1] pb-[3em]">(MAIN SERVICES)</h1>
         </div>
