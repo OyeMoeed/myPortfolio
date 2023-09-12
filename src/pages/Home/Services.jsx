@@ -6,9 +6,11 @@ const Services = () => {
       <div className="flex flex-col">
         <div className="flex justify-center">
           {" "}
-          <h1 className="text-[#f1f1f1] pb-[3em]">(MAIN SERVICES)</h1>
+          <h1 className="text-[#f1f1f1] pb-[3em] lg:text-[1em] text-[0.5em]">
+            ( MAIN SERVICES )
+          </h1>
         </div>
-        <div className="flex flex-row justify-between text-[2em] lg:text-[5em] border p-3 rounded-xl border-[#383838]">
+        <div className="flex flex-row justify-between text-[1.2em]  lg:text-[5em] border p-3 rounded-xl border-[#383838]">
           <div className="text-[#f1f1f1]">Front End</div>
           <div className="text-[#797979]">Back End</div>
         </div>

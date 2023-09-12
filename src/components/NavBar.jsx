@@ -15,10 +15,12 @@ const NavBar = () => {
         className="fixed right-0 left-0 flex flex-row justify-between items-center h-[5em]
       px-4 z-[100000000]"
       >
-        <a className="text-[#F1F1F1] z-[100000000]">
+        <a className="text-[#F1F1F1] lg:text-[1em] text-[0.7em] z-[100000000]">
           <Link to={"/"}>
             <h1>Moeed Sarwar</h1>
-            <p className="text-[#797979] text-[0.8em]">Gujranwala,Pk</p>
+            <p className="text-[#797979] lg:text-[0.8em] text-[0.5em] ">
+              Gujranwala,Pk
+            </p>
           </Link>
         </a>
         <nav>
@@ -40,10 +42,10 @@ const NavBar = () => {
             </li>
           </ul>
         </nav>
-        <nav className="text-[#f1f1f1] z-[1000000000] flex flex-row items-center space-x-2 md:hidden">
+        <nav className="text-[#f1f1f1] z-[1000000000] text-[0.8em] flex flex-row items-center space-x-2 md:hidden">
           <h1>Menu</h1>
           <div onClick={NavHandeler}>
-            {!nav ? <IoMenuOutline size={20} /> : <IoCloseOutline size={20} />}
+            {!nav ? <IoMenuOutline size={15} /> : <IoCloseOutline size={15} />}
           </div>
         </nav>
       </div>
