@@ -24,7 +24,7 @@ const NavBar = () => {
           </Link>
         </a>
         <nav>
-          <ul className="md:flex space-x-3 text-[#f1f1f1] items-center hidden">
+          <ul className="md:flex space-x-3 text-[#f1f1f1] lg:text-[1em] text-[0.7em] items-center hidden">
             <li>
               <Link to={"/"}>Home</Link>
             </li>

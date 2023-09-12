@@ -6,7 +6,7 @@ const Work = () => {
           <div className="flex flex-col  rounded-3xl border border-b-0 border-[#383838] justify-center">
             <div className="text-center my-[2em] lg:px-4 ">
               <h1 className="text-[#f1f1f1] font-light md:text-[4em] text-[0.8em]">
-               <span className="lg:ml-[15em] ml-[3em]"> My</span> role involves delineating and highlighting the key facets of
+               <span className="lg:ml-[15em] md:ml-[10em] ml-[3em]"> My</span> role involves delineating and highlighting the key facets of
                 the brand, showcasing its personality and evoking emotions.
               </h1>
             </div>{" "}
