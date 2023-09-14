@@ -30,7 +30,7 @@ export const Email = () => {
         ref={form}
         className="flex flex-col space-y-[2em]"
       >
-        <div className="flex lg:flex-row flex-col lg:space-x-5 space-y-5">
+        <div className="flex lg:flex-row flex-col lg:space-x-5 lg:space-y-0 space-y-5">
           <input
             type="text"
             name="from_name"
