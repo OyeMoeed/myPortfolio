@@ -26,10 +26,7 @@ export const Email = () => {
 
   return (
     <div className="text-[#f1f1f1]">
-      <form
-        ref={form}
-        className="flex flex-col space-y-[2em]"
-      >
+      <form ref={form} className="flex flex-col space-y-[2em]">
         <div className="flex lg:flex-row flex-col lg:space-x-5 lg:space-y-0 space-y-5">
           <input
             type="text"
@@ -59,7 +56,9 @@ export const Email = () => {
           type="submit"
           onClick={sendEmail}
           className="border border-[#f1f1f1] bg-[#020202] p-3 rounded-xl hover:bg-[#f1f1f1] hover:text-[#020202]"
-        >Send</button>
+        >
+          Send
+        </button>
       </form>
     </div>
   );
