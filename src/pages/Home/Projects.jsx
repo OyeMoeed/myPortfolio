@@ -2,6 +2,7 @@ import React from "react";
 import image from "../assets/landing.png";
 import image2 from "../assets/Expense.png";
 import { AiOutlinePlus } from "react-icons/ai";
+import { Link } from "react-router-dom";
 const Projects = () => {
   return (
     <div className="max-w-screen px-4 py-[5em] mx-auto font-all overflow-hidden">
@@ -15,30 +16,31 @@ const Projects = () => {
               Projects
             </h1>
           </div>
-          <div className="border border-[#383838] border-b-0 border-l-0 border-r-0 rounded-3xl lg:text-[1em] text-[0.5em] pb-[2em]">
+          <a
+            href="https://moeedinternship.netlify.app/"
+            target="_blank"
+            className="border border-[#383838] border-b-0 border-l-0 border-r-0 rounded-3xl lg:text-[1em] text-[0.5em] pb-[2em] cursor-pointer"
+          >
             <div className="flex justify-between text-left  ">
-              <h1 className="text-[#f1f1f1] py-[2em] pl-[1em] cursor-pointer">
-                <a href="https://moeedinternship.netlify.app/" target="_blank">
-                  A+ Studio Landing Page
-                </a>
+              <h1 className="text-[#f1f1f1] py-[2em] pl-[1em]">
+                <div>A+ Studio Landing Page</div>
               </h1>
               <h1 className="[#f1f1f1] py-[2em] pr-[1em]"> Starter</h1>
             </div>
             <div>
               <img src={image} alt="/" className="px-[1em] w-screen" />
             </div>
-          </div>
+          </a>
         </div>
-        <div className="flex lg:flex-row flex-col lg:space-x-4 mt-[2em] ">
+        <a
+          href="https://symphonious-sable-5ddc06.netlify.app/"
+          target="_blank"
+          className="flex lg:flex-row flex-col lg:space-x-4 mt-[2em] cursor-pointer "
+        >
           <div className="border lg:w-1/2 border-[#383838] border-b-0 border-l-0 border-r-0 rounded-3xl  lg:text-[1em] text-[0.5em] ">
             <div className="flex justify-between text-left  ">
-              <h1 className="text-white py-[2em] pl-[1em] cursor-pointer">
-                <a
-                  href="https://symphonious-sable-5ddc06.netlify.app/"
-                  target="_blank"
-                >
-                  Expense Tracker
-                </a>
+              <h1 className="text-white py-[2em] pl-[1em] ">
+                <div>Expense Tracker</div>
               </h1>
               <h1 className="text-white py-[2em] pr-[1em]"> Starter</h1>
             </div>
@@ -46,17 +48,20 @@ const Projects = () => {
               <img src={image2} alt="/" className="pt-[1em] pb-[3em] " />
             </div>
           </div>
-          <div className="border lg:w-1/2 border-[#383838] border-b-0 border-l-0 border-r-0 rounded-2xl lg:text-[1em] text-[0.5em]">
+          <Link
+            to="/projects"
+            className="border lg:w-1/2 border-[#383838] border-b-0 border-l-0 border-r-0 rounded-2xl lg:text-[1em] text-[0.5em]"
+          >
             <div className="flex justify-between text-left flex-col  ">
               <h1 className="text-white py-[2em] pl-[1em] cursor-pointer">
-                <a>All Projects</a>
+                <div>All Projects</div>
               </h1>
-              <div className="border  border-[#383838]  rounded-2xl lg:text-[1em] text-[0.5em] h-[60em] items-center justify-center flex lg:h-[30em]">
-                <AiOutlinePlus size={30} className="text-[#383838]" />
+              <div className="border  border-[#383838]  rounded-2xl lg:text-[1em] text-[0.5em] h-[60em] items-center justify-center flex lg:h-[30em] hover:border-[#f1f1f1] hover:text-[#f1f1f1]">
+                <AiOutlinePlus size={30} className="text-[#383838] " />
               </div>
             </div>
-          </div>
-        </div>
+          </Link>
+        </a>
       </div>
     </div>
   );

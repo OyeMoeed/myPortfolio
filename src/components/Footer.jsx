@@ -1,6 +1,7 @@
 import React from "react";
 import { CiLinkedin, CiFacebook, CiInstagram } from "react-icons/ci";
 import { AiOutlineGithub} from "react-icons/ai";
+import { Email } from "./Api/Email";
 const Footer = () => {
   return (
     <div className="max-w-screen mx-auto px-4 font-all  ">
@@ -50,10 +51,11 @@ const Footer = () => {
               to drop me an email or fill the form
             </h1>
             <p className="text-[#383838] pb-[2em]">Email</p>
-            <p className="text-[#f1f1f1] lg:text-[2em] text-[1.5em] pb-[2em]">
+            <p className="text-[#f1f1f1] lg:text-[2em] text-[1.5em] pb-[7.3em]">
               oyemoeed@gmail.com
             </p>
             <p className="text-[#383838] pb-[2em]">Enter Your Details</p>
+            <Email />
           </div>
         </div>
       </div>
