@@ -58,13 +58,13 @@ const NavBar = () => {
       >
         <div className="flex flex-col justify-between h-[90vh]">
           <ul className="p-4 space-y-3 text-[2em] text-[#f1f1f1] items-center">
-            <li className=" border rounded-2xl border-[#383838] ">
+            <li type="submit" className=" border rounded-2xl border-[#383838] ">
               <Link to={"/"} className="pl-2 flex ">
                 Home
               </Link>
             </li>
             <li className="border rounded-2xl border-[#383838] ">
-              <Link to={"/"} className="pl-2 flex">
+              <Link to={"/about"} className="pl-2 flex">
                 About
               </Link>
             </li>
