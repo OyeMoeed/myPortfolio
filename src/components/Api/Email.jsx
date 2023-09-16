@@ -6,6 +6,7 @@ export const Email = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    form.current.reset();
 
     emailjs
       .sendForm(

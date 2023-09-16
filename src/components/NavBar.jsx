@@ -7,6 +7,7 @@ const NavBar = () => {
 
   const NavHandeler = () => {
     setNav(!nav);
+    document.body.style.overflow = nav ? "auto" : "hidden";
   };
 
   return (
@@ -58,22 +59,35 @@ const NavBar = () => {
       >
         <div className="flex flex-col justify-between h-[90vh]">
           <ul className="p-4 space-y-3 text-[2em] text-[#f1f1f1] items-center">
-            <li type="submit" className=" border rounded-2xl border-[#383838] ">
+            <li
+              type="submit"
+              className=" border rounded-2xl border-[#383838]  "
+              onClick={NavHandeler}
+            >
               <Link to={"/"} className="pl-2 flex ">
                 Home
               </Link>
             </li>
-            <li className="border rounded-2xl border-[#383838] ">
+            <li
+              className="border rounded-2xl border-[#383838] "
+              onClick={NavHandeler}
+            >
               <Link to={"/about"} className="pl-2 flex">
                 About
               </Link>
             </li>
-            <li className="border rounded-2xl border-[#383838] ">
+            <li
+              className="border rounded-2xl border-[#383838] "
+              onClick={NavHandeler}
+            >
               <Link to={"/"} className="pl-2 flex">
                 Playground
               </Link>
             </li>
-            <li className="border rounded-2xl border-[#383838] ">
+            <li
+              className="border rounded-2xl border-[#383838] "
+              onClick={NavHandeler}
+            >
               <Link to={"/"} className="pl-2 flex">
                 Contact
               </Link>
