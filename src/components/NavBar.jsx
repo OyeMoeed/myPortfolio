@@ -35,7 +35,7 @@ const NavBar = () => {
               className="text-white"
             />
           </div>
-          <div className="text-white text-[2em] w-[10em] pb-[3em] pt-[1em]">
+          <div className="text-white text-[2em] w-[10em] lg:pb-[3em] pb-[1em] pt-[1em]">
             <p>Let's Plan a brighter Future</p>
           </div>
           <div className="text-[#797979] text-[1.5em] pb-[1em]">
