@@ -42,6 +42,10 @@ const NavBar = () => {
             <p>Enter Your Details</p>
           </div>
           <div> {showForm && <Email />}</div>
+          <div className="text-[#797979] flex flex-col pt-[1em] space-y-2 justify-center text-center">
+          <p>OR</p>
+          <p className="lg:text-[2em]">oyemoeed@gmail.com</p>
+          </div>
         </div>
       </div>
       <nav className="max-w-screen h-[5em] font-all">
