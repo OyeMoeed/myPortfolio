@@ -1,31 +1,38 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Clock from "../utils/Clock";
 import { IoCloseOutline, IoMenuOutline } from "react-icons/io5";
 import { AiOutlineClose } from "react-icons/ai";
+import Clock from "../utils/Clock";
 import { Email } from "./Api/Email";
-const NavBar = () => {
-  const [nav, setNav] = useState(false);
-  const [showForm, setShowForm] = useState(false); // Add showForm state
 
-  const NavHandeler = () => {
-    setNav(!nav);
-    document.body.style.overflow = nav ? "auto" : "hidden";
+const NavBar = () => {
+  const [state, setState] = useState({
+    nav: false,
+    showForm: false,
+  });
+
+  const toggleNav = () => {
+    setState((prevState) => ({
+      ...prevState,
+      nav: !prevState.nav,
+    }));
+    document.body.style.overflow = state.nav ? "auto" : "hidden";
   };
+
   const toggleForm = () => {
-    setShowForm(!showForm);
+    setState((prevState) => ({
+      ...prevState,
+      showForm: !prevState.showForm,
+    }));
   };
+
+  const formClassName = `fixed pt-[2em] px-[1em] rounded-3xl right-0 lg:top-[0em] top-0 w-screen lg:w-[50%] h-screen lg:backdrop-blur-lg backdrop-blur-3xl ease-in-out duration-500 z-[100000000000000000000000000000000000000] ${
+    state.showForm ? "" : "right-[-200%] space-y-[21rem]"
+  }`;
 
   return (
     <div className="font-all">
-      {" "}
-      <div
-        className={
-          showForm
-            ? "fixed pt-[2em] px-[1em] rounded-3xl  right-0 lg:top-[0em] top-0 w-screen lg:w-[50%] h-screen lg:backdrop-blur-lg backdrop-blur-3xl ease-in-out duration-500 z-[100000000000000000000000000000000000000]"
-            : "fixed pt-[2em] px-[1em] rounded-3xl  right-[-200%] top-0 lg:w-screen w-[60%] h-screen space-y-[21rem] lg:backdrop-blur-lg backdrop-blur-3xl ease-in-out duration-500 z-[100000000000000000000000000000000000000]"
-        }
-      >
+      <div className={formClassName}>
         <div className="flex flex-col px-[0.5em]">
           <div className="flex justify-between items-center">
             <p className="text-[#f1f1f1]">Contact</p>
@@ -41,23 +48,20 @@ const NavBar = () => {
           <div className="text-[#797979] text-[1.5em] pb-[1em]">
             <p>Enter Your Details</p>
           </div>
-          <div> {showForm && <Email />}</div>
+          {state.showForm && <Email />}
           <div className="text-[#797979] flex flex-col pt-[1em] space-y-2 justify-center text-center">
-          <p>OR</p>
-          <p className="lg:text-[2em]">oyemoeed@gmail.com</p>
+            <p>OR</p>
+            <p className="lg:text-[2em]">oyemoeed@gmail.com</p>
           </div>
         </div>
       </div>
       <nav className="max-w-screen h-[5em] font-all">
-        <div
-          className="fixed right-0 left-0 flex flex-row justify-between items-center h-[5em]
-      px-4 z-[100000000]"
-        >
+        <div className="fixed right-0 left-0 flex flex-row justify-between items-center h-[5em] px-4 z-[100000000]">
           <a className="text-[#F1F1F1] lg:text-[1em] text-[0.7em] z-[100000000]">
             <Link to={"/"}>
               <h1>Moeed Sarwar</h1>
-              <p className="text-[#797979] lg:text-[0.8em] text-[0.5em] ">
-                Gujranwala,Pk
+              <p className="text-[#797979] lg:text-[0.8em] text-[0.5em]">
+                Gujranwala, PK
               </p>
             </Link>
           </a>
@@ -82,8 +86,8 @@ const NavBar = () => {
           </nav>
           <nav className="text-[#f1f1f1] z-[1000000000] text-[0.8em] flex flex-row items-center space-x-2 md:hidden">
             <h1>Menu</h1>
-            <div onClick={NavHandeler}>
-              {!nav ? (
+            <div onClick={toggleNav}>
+              {!state.nav ? (
                 <IoMenuOutline size={15} />
               ) : (
                 <IoCloseOutline size={15} />
@@ -92,41 +96,39 @@ const NavBar = () => {
           </nav>
         </div>
         <div
-          className={
-            nav
-              ? "fixed pt-[4em] right-0 top-0 w-screen h-screen bg-[#020202] ease-in-out duration-500"
-              : "fixed pt-[4em] right-[-200%] top-0 w-screen h-screen space-y-[21rem] bg-[#020202] ease-in-out duration-500"
-          }
+          className={`fixed pt-[4em] right-0 top-0 w-screen h-screen bg-[#020202] ease-in-out duration-500 ${
+            state.nav ? "" : "right-[-200%] space-y-[21rem]"
+          } `}
         >
           <div className="flex flex-col justify-between h-[90vh]">
             <ul className="p-4 space-y-3 text-[2em] text-[#f1f1f1] items-center">
               <li
                 type="submit"
-                className=" border rounded-2xl border-[#383838]  "
-                onClick={NavHandeler}
+                className="border rounded-2xl border-[#383838]"
+                onClick={toggleNav}
               >
-                <Link to={"/"} className="pl-2 flex ">
+                <Link to={"/"} className="pl-2 flex">
                   Home
                 </Link>
               </li>
               <li
-                className="border rounded-2xl border-[#383838] "
-                onClick={NavHandeler}
+                className="border rounded-2xl border-[#383838]"
+                onClick={toggleNav}
               >
                 <Link to={"/about"} className="pl-2 flex">
                   About
                 </Link>
               </li>
               <li
-                className="border rounded-2xl border-[#383838] "
-                onClick={NavHandeler}
+                className="border rounded-2xl border-[#383838]"
+                onClick={toggleNav}
               >
                 <Link to={"/"} className="pl-2 flex">
                   Playground
                 </Link>
               </li>
               <li
-                className="border rounded-2xl border-[#383838] "
+                className="border rounded-2xl border-[#383838]"
                 onClick={toggleForm}
               >
                 <Link to={"/"} className="pl-2 flex">
@@ -149,7 +151,7 @@ const NavBar = () => {
                       href="https://www.linkedin.com/in/moeedsarwar/"
                       target="blank"
                     >
-                      Linked In
+                      LinkedIn
                     </a>
                   </li>
                   <li>

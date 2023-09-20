@@ -2,12 +2,15 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 export const Email = () => {
+  // Create a ref to the form element
   const form = useRef();
 
+  // Function to handle form submission
   const sendEmail = (e) => {
-    e.preventDefault();
-    form.current.reset();
+    e.preventDefault(); // Prevent the default form submission behavior
+    form.current.reset(); // Reset the form after submission
 
+    // Send the form data using emailjs
     emailjs
       .sendForm(
         "service_vf6n4fu",
