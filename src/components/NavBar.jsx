@@ -24,6 +24,7 @@ const NavBar = () => {
       ...prevState,
       showForm: !prevState.showForm,
     }));
+    document.body.style.overflow = state.showForm ? "auto" : "hidden";
   };
 
   const formClassName = `fixed pt-[2em] px-[1em] rounded-3xl right-0 lg:top-[0em] top-0 w-screen lg:w-[50%] h-screen lg:backdrop-blur-lg backdrop-blur-3xl ease-in-out duration-500 z-[100000000000000000000000000000000000000] ${
@@ -131,9 +132,7 @@ const NavBar = () => {
                 className="border rounded-2xl border-[#383838]"
                 onClick={toggleForm}
               >
-                <Link to={"/"} className="pl-2 flex">
-                  Contact
-                </Link>
+                <Link className="pl-2 flex">Contact</Link>
               </li>
             </ul>
             <div className="pl-4">

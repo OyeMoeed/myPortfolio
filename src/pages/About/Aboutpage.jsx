@@ -16,11 +16,11 @@ const Aboutpage = () => {
   return (
     // Apply animation to the entire component using motion.div
     <motion.div initial={{ y: 200, opacity: 0 }} animate={controls}>
-      <div>
-        {/* Render HeroAbout and Aim components */}
-        <HeroAbout />
-        <Aim />
-      </div>
+        <div>
+          {/* Render HeroAbout and Aim components */}
+          <HeroAbout />
+          <Aim />
+        </div>
     </motion.div>
   );
 };
