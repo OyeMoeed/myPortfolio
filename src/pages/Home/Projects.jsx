@@ -60,7 +60,7 @@ const Projects = () => {
 
           {/* All Projects Link */}
           <Link
-            to="/projects"
+            to="/playground"
             className="border lg:w-1/2 border-[#383838] border-b-0 border-l-0 border-r-0 rounded-2xl lg:text-[1em] text-[0.5em]"
           >
             <div className="flex justify-between text-left flex-col">

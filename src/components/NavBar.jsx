@@ -75,10 +75,10 @@ const NavBar = () => {
                 <Link to={"/about"}>About</Link>
               </li>
               <li>
-                <Link to={"/"}>Playground</Link>
+                <Link to={"/playground"}>Playground</Link>
               </li>
               <li onClick={toggleForm}>
-                <Link to={"/"}>Contact</Link>
+                <Link>Contact</Link>
               </li>
               <li>
                 <Clock />
@@ -124,7 +124,7 @@ const NavBar = () => {
                 className="border rounded-2xl border-[#383838]"
                 onClick={toggleNav}
               >
-                <Link to={"/"} className="pl-2 flex">
+                <Link to={"/playground"} className="pl-2 flex">
                   Playground
                 </Link>
               </li>

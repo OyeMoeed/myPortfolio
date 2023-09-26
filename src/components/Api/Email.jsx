@@ -34,13 +34,13 @@ export const Email = () => {
         <div className="flex lg:flex-row flex-col lg:space-x-5 lg:space-y-0 space-y-5">
           <input
             type="text"
-            name="from_name"
+            name="name"
             placeholder="Name*"
             className="border border-[#383838] bg-[#020202] p-3 rounded-xl lg:w-1/2 text-white"
           />
           <input
             type="email"
-            name="user_email"
+            name="email"
             placeholder="Email*"
             className="border border-[#383838] bg-[#020202] p-3 rounded-xl lg:w-1/2 text-white"
           />
