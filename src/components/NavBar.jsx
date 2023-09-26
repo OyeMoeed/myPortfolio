@@ -32,7 +32,7 @@ const NavBar = () => {
   }`;
 
   return (
-    <div className="font-all">
+    <div className="font-all overflow-hidden">
       <div className={formClassName}>
         <div className="flex flex-col px-[0.5em]">
           <div className="flex justify-between items-center">
@@ -56,7 +56,7 @@ const NavBar = () => {
           </div>
         </div>
       </div>
-      <nav className="max-w-screen h-[5em] font-all">
+      <nav className="max-w-screen h-[5em] font-all overflow-hidden">
         <div className="fixed right-0 left-0 flex flex-row justify-between items-center h-[5em] px-4 z-[100000000]">
           <a className="text-[#F1F1F1] lg:text-[1em] text-[0.7em] z-[100000000]">
             <Link to={"/"}>

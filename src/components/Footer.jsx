@@ -5,7 +5,7 @@ import { Email } from "./Api/Email";
 
 const Footer = () => {
   return (
-    <div className="max-w-screen mx-auto px-4 font-all">
+    <div className="max-w-screen mx-auto px-4 font-all overflow-hidden">
       {/* Footer content container */}
       <div className="flex lg:flex-row flex-col">
         {/* Social media links */}

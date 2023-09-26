@@ -13,7 +13,11 @@ const PlaygroundPage = () => {
 
   return (
     // Apply animation to the entire component using motion.div
-    <motion.div initial={{ y: 200, opacity: 0 }} animate={controls}>
+    <motion.div
+      initial={{ y: 200, opacity: 0 }}
+      animate={controls}
+      className="overflow-hidden"
+    >
       <PlaygroundHome />
     </motion.div>
   );

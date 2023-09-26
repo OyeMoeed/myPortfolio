@@ -7,7 +7,7 @@ import Work from "./Work";
 import Projects from "./Projects";
 const HomePage = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Hero />
       <Services />
       <Speciality />
