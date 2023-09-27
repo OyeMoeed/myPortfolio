@@ -52,7 +52,12 @@ const NavBar = () => {
           {state.showForm && <Email />}
           <div className="text-[#797979] flex flex-col pt-[1em] space-y-2 justify-center text-center">
             <p>OR</p>
-            <p className="lg:text-[2em]">oyemoeed@gmail.com</p>
+            <a
+              href="mailto:oyemoeed@gmail.com"
+              className="lg:text-[2em] text-[1.5em] "
+            >
+              oyemoeed@gmail.com
+            </a>
           </div>
         </div>
       </div>

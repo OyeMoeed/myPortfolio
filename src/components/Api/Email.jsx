@@ -8,24 +8,53 @@ export const Email = () => {
   // Function to handle form submission
   const sendEmail = (e) => {
     e.preventDefault(); // Prevent the default form submission behavior
-    form.current.reset(); // Reset the form after submission
+
+    // Check if any of the required fields are empty
+    let hasEmptyFields = false;
+
+    // Iterate through the form elements and check for empty required fields
+    for (const input of form.current.elements) {
+      if (input.required && input.value.trim() === "") {
+        hasEmptyFields = true;
+        input.classList.add("border-red-500"); // Add a red border to highlight empty required fields
+      } else {
+        input.classList.remove("border-red-500"); // Remove the red border if the field is filled
+      }
+    }
+
+    if (hasEmptyFields) {
+      alert("Please Fill All the Required Fields");
+      return; // Don't submit the form if required fields are empty
+    }
+
+    // Reset the form after submission
+    form.current.reset();
 
     // Send the form data using emailjs
     emailjs
       .sendForm(
         "service_vf6n4fu",
-        "template_omnacct",
+        "template_rvja0rg",
         form.current,
         "5O4rikNL3avBauwM-"
       )
       .then(
         (result) => {
           console.log(result.text);
+          alert("Email sent successfully"); // Display a success message
         },
         (error) => {
           console.log(error.text);
+          alert("Failed to send email"); // Display an error message
         }
       );
+  };
+
+  // Function to remove the red border when an input field is filled
+  const handleInputChange = (e) => {
+    if (e.target.required && e.target.value.trim() !== "") {
+      e.target.classList.remove("border-red-500"); // Remove the red border
+    }
   };
 
   return (
@@ -37,24 +66,32 @@ export const Email = () => {
             name="name"
             placeholder="Name*"
             className="border border-[#383838] bg-[#020202] p-3 rounded-xl lg:w-1/2 text-white"
+            required // Mark as required
+            onInput={handleInputChange} // Add input event listener
           />
           <input
             type="email"
             name="email"
             placeholder="Email*"
             className="border border-[#383838] bg-[#020202] p-3 rounded-xl lg:w-1/2 text-white"
+            required // Mark as required
+            onInput={handleInputChange} // Add input event listener
           />
         </div>
         <input
           type="text"
           name="project"
-          placeholder="Project Details*"
+          placeholder="Project Topic*"
           className="border border-[#383838] bg-[#020202] p-3 rounded-xl text-white"
+          required // Mark as required
+          onInput={handleInputChange} // Add input event listener
         />
         <textarea
-          name="message"
-          placeholder="Message*"
+          name="details"
+          placeholder="Details"
           className="border border-[#383838] bg-[#020202] p-3 rounded-xl text-white"
+          required // Mark as required
+          onInput={handleInputChange} // Add input event listener
         />
         <button
           type="submit"

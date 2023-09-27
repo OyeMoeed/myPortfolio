@@ -59,9 +59,14 @@ const Footer = () => {
               to drop me an email or fill out the form below:
             </h1>
             <p className="text-[#383838] pb-[2em]">Email</p>
-            <p className="text-[#f1f1f1] lg:text-[2em] text-[1.5em] pb-[7.3em]">
-              oyemoeed@gmail.com
-            </p>
+            <div className="pb-[12em]">
+              <a
+                href="mailto:oyemoeed@gmail.com"
+                className="text-[#f1f1f1] lg:text-[2em] text-[1.5em] "
+              >
+                oyemoeed@gmail.com
+              </a>
+            </div>
             <p className="text-[#383838] pb-[2em]">Enter Your Details</p>
             {/* Include the Email component */}
             <Email />
