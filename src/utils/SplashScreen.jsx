@@ -12,7 +12,7 @@ const SplashScreen = ({ onVanish }) => {
 
   // Use useEffect to increment the count every 100ms
   useEffect(() => {
-    const timer = setInterval(incrementCount, 30);
+    const timer = setInterval(incrementCount, 40);
 
     // Clear the timer when the count reaches 100
     if (count === 100) {
@@ -41,7 +41,7 @@ const SplashScreen = ({ onVanish }) => {
           </h1>
         </div>
         <div
-          className=" absolute lg:h-[2em] h-[1em] bottom-[5em] "
+          className=" absolute  h-[1em] bottom-[5em] "
           style={{ width: "100%", maxWidth: "300px" }}
         >
           <div
@@ -50,6 +50,10 @@ const SplashScreen = ({ onVanish }) => {
           ></div>
         </div>
       </div>
+      <div
+        className="fixed inset-0  h-screen w-screen"
+        style={splashScreenStyle}
+      ></div>
     </div>
   );
 };
