@@ -48,7 +48,7 @@ const PlaygroundHome = () => {
           <div className="flex lg:flex-row flex-col justify-between">
             <motion.a
               whileHover={{ opacity: 0.6 }}
-              href="https://symphonious-sable-5ddc06.netlify.app/"
+              href="https://weatherappbymoeed.netlify.app/"
               target="blank"
               className=" cursor-pointer"
             >
