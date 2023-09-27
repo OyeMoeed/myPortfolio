@@ -47,10 +47,10 @@ const Projects = () => {
 
         {/* Expense Tracker */}
         <div className="px-[2em] pb-[2em]">
-          <div className="flex lg:flex-row flex-col justify-between">
+          <div className="flex lg:flex-row flex-col lg:space-x-[15em] lg:space-y-0 space-y-[1em]" >
             <motion.a
               whileHover={{ opacity: 0.6 }}
-              href="https://weatherappbymoeed.netlify.app/"
+              href="https://weather-app-two-brown.vercel.app/"
               target="blank"
               className=" cursor-pointer"
             >
@@ -72,7 +72,7 @@ const Projects = () => {
             </motion.a>
             <motion.div whileHover={{ opacity: 0.6 }}>
               <a
-                href="https://symphonious-sable-5ddc06.netlify.app/"
+                href="hhttps://expense-tracker-two-neon.vercel.app/"
                 target="blank"
                 className=" lg:space-x-4 mt-[2em] cursor-pointer"
               >

@@ -45,7 +45,7 @@ const PlaygroundHome = () => {
 
         {/* Expense Tracker */}
         <div className="px-[2em] pb-[2em]">
-          <div className="flex lg:flex-row flex-col justify-between">
+          <div className="flex lg:flex-row flex-col lg:space-x-[15em] lg:space-y-0 space-y-[1em]">
             <motion.a
               whileHover={{ opacity: 0.6 }}
               href="https://weatherappbymoeed.netlify.app/"
