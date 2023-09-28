@@ -32,12 +32,7 @@ export const Email = () => {
 
     // Send the form data using emailjs
     emailjs
-      .sendForm(
-        "service_b0i5u9b",
-        "template_rvja0rg",
-        form.current,
-        "5O4rikNL3avBauwM-"
-      )
+      .sendForm("moeedsarwar112", "default", form.current, "5O4rikNL3avBauwM-")
       .then(
         (result) => {
           console.log(result.text);
@@ -59,11 +54,15 @@ export const Email = () => {
 
   return (
     <div className="text-[#f1f1f1]">
-      <form ref={form} className="flex flex-col space-y-[2em]">
+      <form
+        ref={form}
+        className="flex flex-col space-y-[2em]"
+        onSubmit={sendEmail}
+      >
         <div className="flex lg:flex-row flex-col lg:space-x-5 lg:space-y-0 space-y-5">
           <input
             type="text"
-            name="name"
+            name="from_name"
             placeholder="Name*"
             className="border border-[#383838] bg-[#020202] p-3 rounded-xl lg:w-1/2 text-white"
             required // Mark as required
@@ -71,7 +70,7 @@ export const Email = () => {
           />
           <input
             type="email"
-            name="email"
+            name="user_email"
             placeholder="Email*"
             className="border border-[#383838] bg-[#020202] p-3 rounded-xl lg:w-1/2 text-white"
             required // Mark as required
@@ -95,7 +94,6 @@ export const Email = () => {
         />
         <button
           type="submit"
-          onClick={sendEmail}
           className="border border-[#f1f1f1] bg-[#020202] p-3 rounded-xl hover:bg-[#f1f1f1] hover:text-[#020202]"
         >
           Send
