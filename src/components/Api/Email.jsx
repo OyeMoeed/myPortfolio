@@ -33,7 +33,7 @@ export const Email = () => {
     // Send the form data using emailjs
     emailjs
       .sendForm(
-        "service_vf6n4fu",
+        "service_b0i5u9b",
         "template_rvja0rg",
         form.current,
         "5O4rikNL3avBauwM-"

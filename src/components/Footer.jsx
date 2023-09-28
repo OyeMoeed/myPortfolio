@@ -61,10 +61,10 @@ const Footer = () => {
             <p className="text-[#383838] pb-[2em]">Email</p>
             <div className="pb-[12em]">
               <a
-                href="mailto:oyemoeed@gmail.com"
+                href="mailto:moeedsarwar112@gmail.com"
                 className="text-[#f1f1f1] lg:text-[2em] text-[1.5em] "
               >
-                oyemoeed@gmail.com
+                moeedsarwar112@gmail.com
               </a>
             </div>
             <p className="text-[#383838] pb-[2em]">Enter Your Details</p>

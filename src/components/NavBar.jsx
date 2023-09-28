@@ -53,10 +53,10 @@ const NavBar = () => {
           <div className="text-[#797979] flex flex-col pt-[1em] space-y-2 justify-center text-center">
             <p>OR</p>
             <a
-              href="mailto:oyemoeed@gmail.com"
+              href="mailto:moeedsarwar112@gmail.com"
               className="lg:text-[2em] text-[1.5em] "
             >
-              oyemoeed@gmail.com
+              moeedsarwar112@gmail.com
             </a>
           </div>
         </div>
@@ -142,7 +142,12 @@ const NavBar = () => {
             </ul>
             <div className="pl-4">
               <h1 className="text-[#797979]">Enquiries</h1>
-              <p className="text-[#f1f1f1]">oyemoeed@gmail.com</p>
+              <a
+                href="mailto:moeedsarwar112@gmail.com"
+                className="text-[#f1f1f1]"
+              >
+                moeedsarwar112@gmail.com
+              </a>
               <div>
                 <ul className="flex flex-row text-[#797979] space-x-2 pt-[2em]">
                   <li>
