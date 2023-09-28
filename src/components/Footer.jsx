@@ -33,7 +33,7 @@ const Footer = () => {
           {/* LinkedIn and Github links */}
           <div className="flex flex-row space-x-3 lg:h-[30em] h-[20em] mt-[1rem]">
             <a
-              href="https://www.linkedin.com/in/your-linkedin-profile/"
+              href="https://www.linkedin.com/in/moeedsarwar/"
               target="blank"
               className="w-1/2 border border-[#383838] hover:border-[#f1f1f1] hover:text-[#f1f1f1] rounded-3xl text-[#383838] p-[1em]  flex flex-col justify-between"
             >
@@ -41,7 +41,7 @@ const Footer = () => {
               <p className="text-[#f1f1f1] lg:text-[2em]">LinkedIn</p>
             </a>
             <a
-              href="https://github.com/your-github-username/"
+              href="https://github.com/OyeMoeed/"
               target="blank"
               className="w-1/2 border border-[#383838] hover:border-[#f1f1f1] hover:text-[#f1f1f1] rounded-3xl text-[#383838] p-[1em]  flex flex-col justify-between"
             >
