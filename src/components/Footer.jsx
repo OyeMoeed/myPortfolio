@@ -62,7 +62,7 @@ const Footer = () => {
             <div className="pb-[12em]">
               <a
                 href="mailto:moeedsarwar112@gmail.com"
-                className="text-[#f1f1f1] lg:text-[2em] text-[1.5em] "
+                className="text-[#f1f1f1] lg:text-[2em] text-[1em] "
               >
                 moeedsarwar112@gmail.com
               </a>
